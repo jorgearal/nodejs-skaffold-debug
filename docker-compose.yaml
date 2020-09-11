@@ -2,6 +2,9 @@ version: '3.6'
 
 services:
   app: 
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend
     ports:
-      - "3000:3000" 
+      - "3000:3000"

@@ -18,7 +18,7 @@ class Server {
     }
 
     config(): void {
-        this.app.set("port", process.env.PORT || 3000);
+        this.app.set("port", process.env.PORT || 4000);
 
         this.app.use(CORSMiddleware);
 
